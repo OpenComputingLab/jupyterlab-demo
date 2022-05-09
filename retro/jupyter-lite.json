@@ -1,0 +1,9 @@
+{
+  "jupyter-config-data": {
+    "collaborative": true,
+    "fullStaticUrl": "../build",
+    "settingsUrl": "../../build/schemas",
+    "themesUrl": "./build/themes"
+  },
+  "jupyter-lite-schema-version": 0
+}

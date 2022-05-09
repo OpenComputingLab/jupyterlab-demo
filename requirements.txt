@@ -13,7 +13,10 @@ theme-darcula
 
 jupyter-videochat
 
+#This can cause notebooks to be  slow to render in Chrome
+#if you have lots of open Crhome tabs
 jupyterlab-myst
+
 jupyterlab-empinken-extension
 jupyterlab-filesystem-access
 jupyterlab-webrtc-docprovider

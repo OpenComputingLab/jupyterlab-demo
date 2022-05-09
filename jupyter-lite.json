@@ -173,13 +173,19 @@
         "load": "static/remoteEntry.aa1060b2d1221f8e5688.js",
         "name": "jupyterlab_pygments",
         "style": "./style"
+      },
+      {
+        "extension": "./extension",
+        "liteExtension": false,
+        "load": "static\\remoteEntry.83c796749c1a515caea8.js",
+        "name": "nbdime-jupyterlab"
       }
     ],
     "fullLabextensionsUrl": "./extensions",
-    "fullMathjaxUrl": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js",
+    "fullMathjaxUrl": "./static/jupyter_server_mathjax/MathJax.js",
     "fullStaticUrl": "./build",
     "licensesUrl": "./lab/api/licenses",
-    "mathjaxConfig": "TeX-AMS_CHTML-full,Safe",
+    "mathjaxConfig": "TeX-AMS-MML_HTMLorMML-full,Safe",
     "preferredPath": "/"
   },
   "jupyter-lite-schema-version": 0

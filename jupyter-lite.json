@@ -9,6 +9,12 @@
       {
         "extension": "./extension",
         "liteExtension": false,
+        "load": "static/remoteEntry.8e7eaccf88569d554db8.js",
+        "name": "@agoose77/jupyterlab-markup"
+      },
+      {
+        "extension": "./extension",
+        "liteExtension": false,
         "load": "static/remoteEntry.3421943a0ce73f10909d.js",
         "name": "@jupyter-widgets/jupyterlab-manager"
       },
@@ -88,12 +94,6 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.6375e54406c677384240.js",
-        "name": "jupyter-leaflet"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": false,
         "load": "static/remoteEntry.509ecd914d0df11eb8e1.js",
         "name": "jupyter-matplotlib"
       },
@@ -123,6 +123,13 @@
         "liteExtension": false,
         "load": "static/remoteEntry.c92422c0db9710171f92.js",
         "name": "jupyterlab-link-share",
+        "style": "./style"
+      },
+      {
+        "extension": "./extension",
+        "liteExtension": false,
+        "load": "static/remoteEntry.b65dd4fef9fa6e2779f9.js",
+        "name": "jupyterlab-myst",
         "style": "./style"
       },
       {

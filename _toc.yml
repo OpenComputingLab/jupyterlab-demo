@@ -1,6 +1,6 @@
 format: jb-book
-root: overview
+root: content/overview
 parts:
 - chapters:
-  - file: empinken_demo
-  - file: collab_demo
+  - file: content/empinken_demo
+  - file: content/collab_demo

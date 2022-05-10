@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Empinken Demo &#8212; JupyterLab Demo</title>
+    <title>Jupyter Book Demo &#8212; JupyterLab Demo</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Github Actions" href="04_gh_actions.html" />
-    <link rel="prev" title="Rich MyST Markdown" href="01_rich_myst_md.html" />
+    <link rel="prev" title="Github Actions" href="04_gh_actions.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -104,8 +103,8 @@ const thebe_selector_output = ".output, .cell_output"
    Rich MyST Markdown
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_empinken_demo.html">
    Empinken Demo
   </a>
  </li>
@@ -114,8 +113,8 @@ const thebe_selector_output = ".output, .cell_output"
    Github Actions
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="05_jupyter_book.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Jupyter Book Demo
   </a>
  </li>
@@ -185,7 +184,7 @@ const thebe_selector_output = ".output, .cell_output"
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/content/02_empinken_demo.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/content/05_jupyter_book.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -202,39 +201,6 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#activity-cells">
-   Activity Cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#learner-cells">
-   Learner Cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tutor-cells">
-   Tutor Cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#solution-cells">
-   Solution Cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#customisable-colours">
-   Customisable Colours
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -242,110 +208,29 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Empinken Demo</h1>
+                <h1>Jupyter Book Demo</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#activity-cells">
-   Activity Cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#learner-cells">
-   Learner Cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tutor-cells">
-   Tutor Cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#solution-cells">
-   Solution Cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#customisable-colours">
-   Customisable Colours
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="empinken-demo">
-<h1>Empinken Demo<a class="headerlink" href="#empinken-demo" title="Permalink to this headline">¶</a></h1>
-<p>This notebook demonstrates persistent, background coloured markedown and code cells.</p>
-<div class="section" id="activity-cells">
-<h2>Activity Cells<a class="headerlink" href="#activity-cells" title="Permalink to this headline">¶</a></h2>
-<p>… are coloured blue, by default…</p>
-<p>These cells can be used to highlight an activity.</p>
-<div class="cell tag_style-activity docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># activity code cell</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Activity markdown cell.</p>
-</div>
-<div class="section" id="learner-cells">
-<h2>Learner Cells<a class="headerlink" href="#learner-cells" title="Permalink to this headline">¶</a></h2>
-<p>…are coloured yellow by default…</p>
-<p>These cells can be used to specify a call to action, indicating a cell a student should edit / contribute to.</p>
-<div class="cell tag_style-student docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># learner markdown cell.</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Learner markdown cell.</p>
-</div>
-<div class="section" id="tutor-cells">
-<h2>Tutor Cells<a class="headerlink" href="#tutor-cells" title="Permalink to this headline">¶</a></h2>
-<p>…are coloured pink by default…</p>
-<p>These cells can be used by a tutor to highlight feedback.</p>
-<div class="cell tag_style-commentate docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># tutor markdown cell.</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Tutor markdown cell.</p>
-</div>
-<div class="section" id="solution-cells">
-<h2>Solution Cells<a class="headerlink" href="#solution-cells" title="Permalink to this headline">¶</a></h2>
-<p>… are coloured green, by default…</p>
-<p>These cells can be used to highlight a worked solution.</p>
-<div class="cell tag_style-solution docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># solution code cell</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Solution markdown cell</p>
-</div>
-<div class="section" id="customisable-colours">
-<h2>Customisable Colours<a class="headerlink" href="#customisable-colours" title="Permalink to this headline">¶</a></h2>
-<p>The background colours are customisable via the extension settings (<code class="docutils literal notranslate"><span class="pre">Settings</span> <span class="pre">&gt;</span> <span class="pre">Advanced</span> <span class="pre">Settings</span> <span class="pre">Editor</span></code>).</p>
-<p>The display of the cell backgound toggle buttons on the noteboo toolbar is also controllable via the extension settings.</p>
-</div>
+  <div class="tex2jax_ignore mathjax_ignore section" id="jupyter-book-demo">
+<h1>Jupyter Book Demo<a class="headerlink" href="#jupyter-book-demo" title="Permalink to this headline">¶</a></h1>
+<p>The notebooks that are distributed via the JuypterLite environment are also used as the basis of the Jupyter Book output published <a class="reference external" href="https://opencomputinglab.github.io/jupyterlab-demo/book/content/overview.html">here</a>.</p>
+<p>In order to render the book, two configuration files are required:</p>
+<ul class="simple">
+<li><p>a <code class="docutils literal notranslate"><span class="pre">config.yml</span></code> file which defines the top level book configuration;</p></li>
+<li><p>a <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file that defines the contents of the book.</p></li>
+</ul>
+<p>Both of these files can be found in the original repository.</p>
+<p>Note that it is possible to define a Jupyer Book theme that provides a “launch” option to launch a notebook corresponding to a book page using JupyterLite. A JupyterLite environment can also be published as part of a Jupyter Book workflow using the <code class="docutils literal notranslate"><span class="pre">jupyterlite-sphinx</span></code> extension, although currently the content files need to be copied over to the JupyterLite distribution manually.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">jupyterlite-sphinx</span></code> package also provides a straightforward mechanism for embedding JupyterLite powered notebooks <em>inside</em> Jupyter Book pages.</p>
+<p><em>The theme used to publish the Jupyter Book in this environment will be updated to include a “launch in JupyterLite” option as and when I get a chance…</em></p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -373,19 +258,12 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="01_rich_myst_md.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="04_gh_actions.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Rich MyST Markdown</p>
+            <p class="prev-next-title">Github Actions</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="04_gh_actions.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Github Actions</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             

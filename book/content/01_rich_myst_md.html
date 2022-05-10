@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Empinken Demo &#8212; JupyterLab Demo</title>
+    <title>Rich MyST Markdown &#8212; JupyterLab Demo</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Github Actions" href="04_gh_actions.html" />
-    <link rel="prev" title="Rich MyST Markdown" href="01_rich_myst_md.html" />
+    <link rel="next" title="Empinken Demo" href="02_empinken_demo.html" />
+    <link rel="prev" title="JupyterLab Migration" href="00_overview.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -99,13 +99,13 @@ const thebe_selector_output = ".output, .cell_output"
    JupyterLab Migration
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="01_rich_myst_md.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Rich MyST Markdown
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_empinken_demo.html">
    Empinken Demo
   </a>
  </li>
@@ -185,7 +185,7 @@ const thebe_selector_output = ".output, .cell_output"
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/content/02_empinken_demo.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/content/01_rich_myst_md.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -208,28 +208,8 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#activity-cells">
-   Activity Cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#learner-cells">
-   Learner Cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tutor-cells">
-   Tutor Cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#solution-cells">
-   Solution Cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#customisable-colours">
-   Customisable Colours
+  <a class="reference internal nav-link" href="#admonition-blocks">
+   Admonition Blocks
   </a>
  </li>
 </ul>
@@ -242,7 +222,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Empinken Demo</h1>
+                <h1>Rich MyST Markdown</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -253,28 +233,8 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#activity-cells">
-   Activity Cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#learner-cells">
-   Learner Cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tutor-cells">
-   Tutor Cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#solution-cells">
-   Solution Cells
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#customisable-colours">
-   Customisable Colours
+  <a class="reference internal nav-link" href="#admonition-blocks">
+   Admonition Blocks
   </a>
  </li>
 </ul>
@@ -286,65 +246,25 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="empinken-demo">
-<h1>Empinken Demo<a class="headerlink" href="#empinken-demo" title="Permalink to this headline">¶</a></h1>
-<p>This notebook demonstrates persistent, background coloured markedown and code cells.</p>
-<div class="section" id="activity-cells">
-<h2>Activity Cells<a class="headerlink" href="#activity-cells" title="Permalink to this headline">¶</a></h2>
-<p>… are coloured blue, by default…</p>
-<p>These cells can be used to highlight an activity.</p>
-<div class="cell tag_style-activity docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># activity code cell</span>
-</pre></div>
+  <div class="tex2jax_ignore mathjax_ignore section" id="rich-myst-markdown">
+<h1>Rich MyST Markdown<a class="headerlink" href="#rich-myst-markdown" title="Permalink to this headline">¶</a></h1>
+<p>With the <code class="docutils literal notranslate"><span class="pre">jupyerlab-myst</span></code> extension installed, richly styled admonition blocks can be rendered within markdown blocks using appropriately labeled code-fenced blocks,</p>
+<p>If you are rreading this document in a “live” notebook environment, either in jupyerLie or a via a “full” notebook server, such as MyBinder, double click on the cell below to view the raw markdown.</p>
+<div class="section" id="admonition-blocks">
+<h2>Admonition Blocks<a class="headerlink" href="#admonition-blocks" title="Permalink to this headline">¶</a></h2>
+<p>Within a markdown cell, we can render a good varety of richly styled admonition blocks.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This is a warning to you…</p>
 </div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>There is danger ahead.</p>
 </div>
+<div class="seealso admonition">
+<p class="admonition-title">For more details…</p>
+<p>See the <a class="reference external" href="https://jupyterbook.org/en/stable/content/content-blocks.html#notes-warnings-and-other-admonitions">Jupyter Book documentation</a>.</p>
 </div>
-<p>Activity markdown cell.</p>
-</div>
-<div class="section" id="learner-cells">
-<h2>Learner Cells<a class="headerlink" href="#learner-cells" title="Permalink to this headline">¶</a></h2>
-<p>…are coloured yellow by default…</p>
-<p>These cells can be used to specify a call to action, indicating a cell a student should edit / contribute to.</p>
-<div class="cell tag_style-student docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># learner markdown cell.</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Learner markdown cell.</p>
-</div>
-<div class="section" id="tutor-cells">
-<h2>Tutor Cells<a class="headerlink" href="#tutor-cells" title="Permalink to this headline">¶</a></h2>
-<p>…are coloured pink by default…</p>
-<p>These cells can be used by a tutor to highlight feedback.</p>
-<div class="cell tag_style-commentate docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># tutor markdown cell.</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Tutor markdown cell.</p>
-</div>
-<div class="section" id="solution-cells">
-<h2>Solution Cells<a class="headerlink" href="#solution-cells" title="Permalink to this headline">¶</a></h2>
-<p>… are coloured green, by default…</p>
-<p>These cells can be used to highlight a worked solution.</p>
-<div class="cell tag_style-solution docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># solution code cell</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Solution markdown cell</p>
-</div>
-<div class="section" id="customisable-colours">
-<h2>Customisable Colours<a class="headerlink" href="#customisable-colours" title="Permalink to this headline">¶</a></h2>
-<p>The background colours are customisable via the extension settings (<code class="docutils literal notranslate"><span class="pre">Settings</span> <span class="pre">&gt;</span> <span class="pre">Advanced</span> <span class="pre">Settings</span> <span class="pre">Editor</span></code>).</p>
-<p>The display of the cell backgound toggle buttons on the noteboo toolbar is also controllable via the extension settings.</p>
 </div>
 </div>
 
@@ -373,17 +293,17 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="01_rich_myst_md.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="00_overview.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Rich MyST Markdown</p>
+            <p class="prev-next-title">JupyterLab Migration</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="04_gh_actions.html" title="next page">
+    <a class='right-next' id="next-link" href="02_empinken_demo.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Github Actions</p>
+        <p class="prev-next-title">Empinken Demo</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

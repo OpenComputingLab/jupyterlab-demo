@@ -1,6 +1,9 @@
 format: jb-book
-root: content/overview
+root: README.md
 parts:
 - chapters:
-  - file: content/empinken_demo
-  - file: content/collab_demo
+  - file: content/01_overview
+  - file: content/02_empinken_demo
+  - file: content/03_local_filesystem
+  - file: content/04_gh_actions
+  - file: content/05_collab_demo

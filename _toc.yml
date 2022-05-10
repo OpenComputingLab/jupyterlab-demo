@@ -2,8 +2,10 @@ format: jb-book
 root: README.md
 parts:
 - chapters:
-  - file: content/01_overview
+  - file: content/00_overview
+  - file: content/01_rich_myst_md
   - file: content/02_empinken_demo
   - file: content/03_local_filesystem
   - file: content/04_gh_actions
-  - file: content/05_collab_demo
+  - file: content/05_jupyter_book
+  - file: content/06_collab_demo

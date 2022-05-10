@@ -1,0 +1,10 @@
+- output: screenshots/jupyterlab.png
+  url: https://opencomputinglab.github.io/jupyterlab-demo/lab/index.html
+  selector: '#main'
+  wait: 3000
+  quality: 50
+- output: screenshots/jupyterlab.png
+  url: https://opencomputinglab.github.io/jupyterlab-demo/lab/index.html?path=empinken_demo.ipynb
+  selector: '#jp-main-dock-panel'
+  wait: 3000
+  quality: 50

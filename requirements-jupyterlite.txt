@@ -1,3 +1,13 @@
+#------ JupyerLite install -------
+
+jupyterlite==0.1.0b7
+#jupyterlite-p5-kernel==0.1.0a12
+#jupyterlite-xeus-lua==0.3.0
+#jupyterlite-xeus-wren==0.2.0
+jupyterlite-xeus-sqlite==0.2.0
+
+
+#------ JupyerLab install -------
 bqplot
 ipycanvas>=0.9.1
 ipympl>=0.8.2
@@ -6,18 +16,14 @@ jupyterlab~=3.3.0
 jupyterlab-drawio
 jupyterlab-language-pack-fr-FR
 jupyterlab-language-pack-zh-CN
-jupyterlab-fasta>=3,<4
+#jupyterlab-fasta>=3,<4
 jupyterlab-geojson>=3,<4
 jupyterlab-tour
 jupyterlab_miami_nights
-jupyterlite==0.1.0b7
-jupyterlite-p5-kernel==0.1.0a12
-jupyterlite-xeus-lua==0.3.0
-jupyterlite-xeus-wren==0.2.0
-jupyterlite-xeus-sqlite==0.2.0
 plotly>=5,<6
 theme-darcula
 
+#------ Demo packages install -------
 jupyterlab-myst
 jupyterlab-empinken-extension
 jupyterlab-filesystem-access
@@ -25,3 +31,8 @@ jupyterlab-webrtc-docprovider
 jupyterlab-link-share
 https://raw.githubusercontent.com/innovationOUtside/jupyterlab_cell_status_extension/main/dist/jupyterlab_cell_status_extension-0.1.3-py3-none-any.whl
 https://raw.githubusercontent.com/innovationOUtside/jupyterlab_ou_brand_extension/main/dist/jupyterlab_ou_brand_extension-0.1.0-py3-none-any.whl
+
+
+#------ Jupyer Book install -------
+jupyter-book
+sphinxcontrib-youtube

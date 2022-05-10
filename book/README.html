@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; JupyterLab Demo</title>
+    <title>jupyterlab-demo &#8212; JupyterLab Demo</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,8 +51,9 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="JupyterLab Migration" href="content/01_overview.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -85,8 +86,8 @@ const thebe_selector_output = ".output, .cell_output"
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="README.html">
+ <li class="toctree-l1 current">
+  <a class="reference internal" href="#">
    jupyterlab-demo
   </a>
  </li>
@@ -140,6 +141,23 @@ const thebe_selector_output = ".output, .cell_output"
             </button>
             
             
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
             <!-- Source interaction buttons -->
 
             <!-- Full screen (wrap in <a> to have style consistency -->
@@ -163,7 +181,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1></h1>
+                <h1>jupyterlab-demo</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -174,19 +192,54 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="tex2jax_ignore mathjax_ignore section" id="jupyterlab-demo">
+<h1>jupyterlab-demo<a class="headerlink" href="#jupyterlab-demo" title="Permalink to this headline">¶</a></h1>
+<p>Demo of OU branded JupyterLite / JupyterLab environment with notes on a proposed migration to JupyterLab from classic Jupyter notebook.</p>
+<p><a class="reference external" href="https://opencomputinglab.github.io/jupyterlab-demo/lab/index.html"><img alt="JupyterLite" src="https://img.shields.io/badge/launch-jupyterlite-orange" /></a></p>
+<p><a class="reference external" href="https://mybinder.org/v2/gh/OpenComputingLab/jupyterlab-demo/HEAD?labpath=content"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
+<p><a class="reference external" href="https://opencomputinglab.github.io/jupyterlab-demo/book"><img alt="Jupyter Book" src="https://img.shields.io/badge/launch-jupyterbook-orange" /></a></p>
+<p>Notebooks shipped as part of the environment can be found in the <code class="docutils literal notranslate"><span class="pre">content/</span></code> directory.</p>
+<p>Github Actions are used to:</p>
+<ul class="simple">
+<li><p>build and publish the JupyterLite distribution;</p></li>
+<li><p>build and publish the Jupyter Book distribution.</p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='right-next' id="next-link" href="content/01_overview.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">JupyterLab Migration</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             
         </div>

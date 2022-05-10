@@ -15,6 +15,13 @@
       {
         "extension": "./extension",
         "liteExtension": false,
+        "load": "static/remoteEntry.12cf3b546f44ca3d0354.js",
+        "name": "@ijmbarr/jupyterlab_spellchecker",
+        "style": "./style"
+      },
+      {
+        "extension": "./extension",
+        "liteExtension": false,
         "load": "static/remoteEntry.3421943a0ce73f10909d.js",
         "name": "@jupyter-widgets/jupyterlab-manager"
       },

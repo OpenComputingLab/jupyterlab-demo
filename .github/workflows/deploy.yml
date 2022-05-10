@@ -60,7 +60,7 @@ jobs:
   # Via: https://github.com/simonw/shot-scraper-demo
   screenshot:
     if: github.ref == 'refs/heads/main'
-      needs: [deploy]
+    needs: [deploy]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

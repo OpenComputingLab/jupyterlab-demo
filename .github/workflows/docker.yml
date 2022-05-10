@@ -17,7 +17,7 @@ jobs:
         pip3 install poetry git+https://github.com/mmh352/ou-container-builder.git
     - name: Generate the Dockerfile
       run: |
-        ou-container-builder --tag ousefuldemos/jupyterlab-demo
+        ou-container-builder --no-build
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v1
 

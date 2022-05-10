@@ -90,6 +90,7 @@ jobs:
       - name: Take shots
         run: |
           mkdir -p screenshots
+          git rm  --ignore-unmatch screenshots/*
           shot-scraper multi screenshot-jupyterlab.yml
       - name: Commit and push if anything changed
         run: |-

@@ -1,0 +1,12 @@
+module:
+  code: jupterlab_demo
+  presentation: 22E
+type: jupyter-notebook
+content:
+  - source: ./requirements.txt
+    target: /tmp/requirements.txt
+    overwrite: always
+scripts:
+  build:
+  - commands: |
+      pip install -r /tmp/requirements.txt

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Github Actions &#8212; JupyterLab Demo</title>
+    <title>Production Automation &#8212; JupyterLab Demo</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -111,7 +111,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Github Actions
+   Production Automation
   </a>
  </li>
  <li class="toctree-l1">
@@ -185,7 +185,7 @@ const thebe_selector_output = ".output, .cell_output"
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/content/04_gh_actions.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/content/04_production_automation.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -202,6 +202,32 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github-actions">
+   Github Actions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git-precommit-hooks">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     git
+    </span>
+    <span class="pre">
+     precommit
+    </span>
+   </code>
+   hooks
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -209,27 +235,69 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Github Actions</h1>
+                <h1>Production Automation</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github-actions">
+   Github Actions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git-precommit-hooks">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     git
+    </span>
+    <span class="pre">
+     precommit
+    </span>
+   </code>
+   hooks
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="github-actions">
-<h1>Github Actions<a class="headerlink" href="#github-actions" title="Permalink to this headline">¶</a></h1>
-<p>Three Github Actions are currently defined on the repository:</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="production-automation">
+<h1>Production Automation<a class="headerlink" href="#production-automation" title="Permalink to this headline">¶</a></h1>
+<p>Various automation strategies can be used to support the production and quality assurance of assets and environments generated from a set of core production resources or source materials.</p>
+<p>These include:</p>
+<ul class="simple">
+<li><p>Github Actions to automatically check the quality of core production resources or source materials;</p></li>
+<li><p>Github Actions to automatically generate and publish production environments (Docker containers, Jupyter Book environments, JupyterLite environments);</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">precommit</span></code> hooks to run code/text quality improvement tools and checks.</p></li>
+</ul>
+<p>For more details, see <a class="reference external" href="https://opencomputinglab.github.io/educational-jupyter-notebook-qa-automation/"><em>Using Automation To Support Quality Assured Jupyter Notebook Publishing Processes</em></a>.</p>
+<div class="section" id="github-actions">
+<h2>Github Actions<a class="headerlink" href="#github-actions" title="Permalink to this headline">¶</a></h2>
+<p>Four Github Actions are currently defined on the repository:</p>
 <ul class="simple">
 <li><p>an action to build the JupyterLite distribution environment and the Jupyter Book distribution;</p></li>
 <li><p>an action to deploy the JupyterLite and Jupyter Book distributions to Github Pages via the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch;</p></li>
-<li><p>an action to grab a couple of screenshots from the published JupyterLite distribution using <code class="docutils literal notranslate"><span class="pre">shot-scraper</span></code> and commit them back to the repository in the <code class="docutils literal notranslate"><span class="pre">screenshots</span></code> directory.</p></li>
+<li><p>an action to grab a couple of screenshots from the published JupyterLite distribution using <code class="docutils literal notranslate"><span class="pre">shot-scraper</span></code> and commit them back to the repository in the <code class="docutils literal notranslate"><span class="pre">screenshots</span></code> directory;</p></li>
+<li><p>an action to buid a Docker container using mark Hall’s <a class="reference external" href="https://ou-container-builder.readthedocs.io/"><code class="docutils literal notranslate"><span class="pre">ou-container-builder</span></code></a> appropriate for deployment via the OU JupyterHub infrastructure.</p></li>
 </ul>
 <p>Note that it is possible to define a Jupyer Book theme that provides a “launch” option to launch a notebook corresponding to a book page using JupyterLite. A JupyterLite environment can also be published as part of a Jupyter Book workflow using the <code class="docutils literal notranslate"><span class="pre">jupyterlite-sphinx</span></code> extension, although currently the content files need to be copied over to the JupyterLite distribution manually.</p>
 <p><em>The theme used to publish the Jupyter Book in this environment will be updated to include a “launch in JupyterLite” option as and when I get a chance…</em></p>
+</div>
+<div class="section" id="git-precommit-hooks">
+<h2><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">precommit</span></code> hooks<a class="headerlink" href="#git-precommit-hooks" title="Permalink to this headline">¶</a></h2>
+<p><em>Forthcoming…</em></p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

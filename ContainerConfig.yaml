@@ -1,10 +1,19 @@
 module:
-  code: jupterlab_demo
+  code: jupyterlab_demo
   presentation: 22E
 type: jupyter-notebook
 content:
   - source: ./requirements.txt
     target: /tmp/requirements.txt
+    overwrite: always
+  - source: content
+    target: content
+    overwrite: never
+  - source: .jupyter
+    target: .jupyter
+    overwrite: never
+  - source: .jupyter/custom
+    target: .jupyter/custom
     overwrite: always
 scripts:
   build:

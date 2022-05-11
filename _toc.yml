@@ -6,6 +6,6 @@ parts:
   - file: content/01_rich_myst_md
   - file: content/02_empinken_demo
   - file: content/03_local_filesystem
-  - file: content/04_gh_actions
+  - file: content/04_production_automation
   - file: content/05_jupyter_book
   - file: content/06_collab_demo

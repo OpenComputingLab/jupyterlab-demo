@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rich MyST Markdown &#8212; JupyterLab Demo</title>
+    <title>Local File System Usage &#8212; JupyterLab Demo</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Empinken Demo" href="02_empinken_demo.html" />
-    <link rel="prev" title="JupyterLab Migration" href="00_overview.html" />
+    <link rel="next" title="Production Automation" href="04_production_automation.html" />
+    <link rel="prev" title="Empinken Demo" href="02_empinken_demo.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -100,8 +100,8 @@ const thebe_selector_output = ".output, .cell_output"
    JupyterLab Migration
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01_rich_myst_md.html">
    Rich MyST Markdown
   </a>
  </li>
@@ -110,8 +110,8 @@ const thebe_selector_output = ".output, .cell_output"
    Empinken Demo
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="03_local_filesystem.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Local File System Usage
   </a>
  </li>
@@ -196,7 +196,7 @@ const thebe_selector_output = ".output, .cell_output"
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/content/01_rich_myst_md.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/content/03_local_filesystem.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -213,19 +213,6 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#admonition-blocks">
-   Admonition Blocks
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -233,50 +220,31 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Rich MyST Markdown</h1>
+                <h1>Local File System Usage</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#admonition-blocks">
-   Admonition Blocks
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="rich-myst-markdown">
-<h1>Rich MyST Markdown<a class="headerlink" href="#rich-myst-markdown" title="Permalink to this headline">¶</a></h1>
-<p>With the <code class="docutils literal notranslate"><span class="pre">jupyerlab-myst</span></code> extension installed, richly styled admonition blocks can be rendered within markdown blocks using appropriately labeled code-fenced blocks,</p>
-<p>If you are rreading this document in a “live” notebook environment, either in jupyerLie or a via a “full” notebook server, such as MyBinder, double click on the cell below to view the raw markdown.</p>
-<div class="section" id="admonition-blocks">
-<h2>Admonition Blocks<a class="headerlink" href="#admonition-blocks" title="Permalink to this headline">¶</a></h2>
-<p>Within a markdown cell, we can render a good varety of richly styled admonition blocks.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This is a warning to you…</p>
-</div>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>There is danger ahead.</p>
-</div>
-<div class="seealso admonition">
-<p class="admonition-title">For more details…</p>
-<p>See the <a class="reference external" href="https://jupyterbook.org/en/stable/content/content-blocks.html#notes-warnings-and-other-admonitions">Jupyter Book documentation</a>.</p>
-</div>
-</div>
+  <div class="tex2jax_ignore mathjax_ignore section" id="local-file-system-usage">
+<h1>Local File System Usage<a class="headerlink" href="#local-file-system-usage" title="Permalink to this headline">¶</a></h1>
+<p>At the current time, there are several file systems at play in JupyterLite, and even more so if a local file system is mounted.</p>
+<ul class="simple">
+<li><p>JupyterLite file system;</p></li>
+<li><p>browser storage file system;</p></li>
+<li><p>local file system.</p></li>
+</ul>
+<p>When opening notebook files from the JupyterLite file system, a copy of the files appears in local browser storage; when opening from the desktop filesystem, no copy appears in local browser storage.</p>
+<p>If you open a data file from the JupyterLite file system and then save it, it also appears in local browser storage; it can then be opened programmatically from local browser storage.</p>
+<p>You can’t seem to open a data file from the local filesystem and save it into browser storage.</p>
+<p>Irrespective of whether the <code class="docutils literal notranslate"><span class="pre">jupyterlab-filesystem-access</span></code> extension is installed, you can manually upload a data file from the desktop file system into the JupyterLite file system (this seems to have a side effect of also placing the file immediately into browser storage).</p>
+<p>When working with a local file system, if a new notebook is created in the JupyterLite environment, it <em>will not</em> be saved to the local file system: it forms part of the JupyterLite file system, and when saved will be saved to browser storage. To get the file into the local file system, you need to <em>download</em> it (<code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Download</span></code>). <em>Note that the downloaded file is the <strong>saved</strong> version of the file, so save your notebook before downloading it.</em> Close the notebook in JupyterLite, and then ensure that the downloaded copy is placed into the appropriate local file system directory. Reopen the notebook from the local file system file listing in JupyterLite. Any updates made to the notebook and then saved will now also be saved back to the local file system.</p>
+<p>The directory path the upload file file picker opens at may be different to the directory path used in selecting the directory on the desktop filesystem.</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -304,17 +272,17 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="00_overview.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="02_empinken_demo.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">JupyterLab Migration</p>
+            <p class="prev-next-title">Empinken Demo</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="02_empinken_demo.html" title="next page">
+    <a class='right-next' id="next-link" href="04_production_automation.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Empinken Demo</p>
+        <p class="prev-next-title">Production Automation</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

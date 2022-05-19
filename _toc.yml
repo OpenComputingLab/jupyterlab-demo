@@ -8,4 +8,4 @@ parts:
   - file: content/03_local_filesystem
   - file: content/04_production_automation
   - file: content/05_jupyter_book
-  - file: content/06_collab_demo
+  - file: content/06_collaboration_demo

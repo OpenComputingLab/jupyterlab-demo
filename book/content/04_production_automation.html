@@ -305,7 +305,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>an action to build the JupyterLite distribution environment and the Jupyter Book distribution;</p></li>
 <li><p>an action to deploy the JupyterLite and Jupyter Book distributions to Github Pages via the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch;</p></li>
 <li><p>an action to grab a couple of screenshots from the published JupyterLite distribution using <code class="docutils literal notranslate"><span class="pre">shot-scraper</span></code> and commit them back to the repository in the <code class="docutils literal notranslate"><span class="pre">screenshots</span></code> directory;</p></li>
-<li><p>an action to buid a Docker container using mark Hall’s <a class="reference external" href="https://ou-container-builder.readthedocs.io/"><code class="docutils literal notranslate"><span class="pre">ou-container-builder</span></code></a> appropriate for deployment via the OU JupyterHub infrastructure.</p></li>
+<li><p>an action to buid a Docker container using Mark Hall’s <a class="reference external" href="https://ou-container-builder.readthedocs.io/"><code class="docutils literal notranslate"><span class="pre">ou-container-builder</span></code></a> appropriate for deployment via the OU JupyterHub infrastructure.</p></li>
 </ul>
 <p>Note that it is possible to define a Jupyer Book theme that provides a “launch” option to launch a notebook corresponding to a book page using JupyterLite. A JupyterLite environment can also be published as part of a Jupyter Book workflow using the <code class="docutils literal notranslate"><span class="pre">jupyterlite-sphinx</span></code> extension, although currently the content files need to be copied over to the JupyterLite distribution manually.</p>
 <p><em>The theme used to publish the Jupyter Book in this environment will be updated to include a “launch in JupyterLite” option as and when I get a chance…</em></p>
@@ -328,13 +328,13 @@ const thebe_selector_output = ".output, .cell_output"
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python",
+            kernelName: "python3",
             path: "./content"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python'</script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

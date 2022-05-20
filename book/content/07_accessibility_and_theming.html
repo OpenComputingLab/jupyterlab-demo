@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Localisation, Theming and Accessibility &#8212; JupyterLab Demo</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/empinken.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Live Collaboration" href="06_collaboration_demo.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">JupyterLab Demo</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../README.html">
+   jupyterlab-demo
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="00_overview.html">
+   JupyterLab Migration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="01_rich_myst_md.html">
+   Rich MyST Markdown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_empinken_demo.html">
+   Empinken Demo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_local_filesystem.html">
+   Local File System Usage
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_production_automation.html">
+   Production Automation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_jupyter_book.html">
+   Jupyter Book Demo
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_collaboration_demo.html">
+   Live Collaboration
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Localisation, Theming and Accessibility
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/content/07_accessibility_and_theming.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#localisation">
+   Localisation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#themes">
+   Themes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#accessibility">
+   Accessibility
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#keyboard-shortcuts">
+     Keyboard Shortcuts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#audible-feedback">
+     Audible Feedback
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#terminal-access">
+     Terminal Access
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quality-audit-tools">
+     Quality Audit Tools
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Localisation, Theming and Accessibility</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#localisation">
+   Localisation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#themes">
+   Themes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#accessibility">
+   Accessibility
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#keyboard-shortcuts">
+     Keyboard Shortcuts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#audible-feedback">
+     Audible Feedback
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#terminal-access">
+     Terminal Access
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quality-audit-tools">
+     Quality Audit Tools
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="localisation-theming-and-accessibility">
+<h1>Localisation, Theming and Accessibility<a class="headerlink" href="#localisation-theming-and-accessibility" title="Permalink to this headline">¶</a></h1>
+<p>Being mindful that different users have different user interface needs, they are various ways in which we might support end user customisation of the user interface.</p>
+<p>This chapter reviews three ways in which end-user customisation is supported in JupyterLab and Jupyter Notebook v7+:</p>
+<ul class="simple">
+<li><p><em>localisation</em>: support for language packs that render menus etc, in various languages (for example, English (default), French, Chinese);</p></li>
+<li><p><em>themes</em>: change the colour scheme, fonts, etc., used th render the user interface;</p></li>
+<li><p><em>accessibility</em>: extensions and quality assurance tools and processes intended to improve accessibility.</p></li>
+</ul>
+<div class="section" id="localisation">
+<h2>Localisation<a class="headerlink" href="#localisation" title="Permalink to this headline">¶</a></h2>
+<p>Language packs are available for a wide variety of languages (see list <a class="reference external" href="https://github.com/jupyterlab/language-packs/tree/master/language-packs">here</a>).</p>
+<p>Language packs can be installed from PyPi using commands of the form:</p>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">jupyterlab-language-pack-fr-FR</span></code></p>
+<p>Custom extensions can themselves be extended to include translation packs [<a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/extension/internationalization.html">docs</a>].</p>
+<p>To change the user interface language, from the <em>Settings</em> menu, select the <em>Language</em> submenu, followed by the language you requre, and then reload JupyterLab.</p>
+<p><img alt="" src="../_images/JupyterLite-languages.png" /></p>
+<p>To minimise the size of the distributed environment, not all the available language packs are likely to be preinstalled. Where users run their own container, they should be able to install (and persist the installation of) language packs of their own choosing, and persist the language settings in their environment. For JupyterLite distributions, custom builds with the language pack preinstalled are probably required.</p>
+</div>
+<div class="section" id="themes">
+<h2>Themes<a class="headerlink" href="#themes" title="Permalink to this headline">¶</a></h2>
+<p>By default, JupyterLab ships with the “traditional” <em>JupyterLab Light</em> theme as well as a complementary <em>JupyterLab Dark</em> theme. Users can select from one of the preinstalled themes from the <em>Settings</em> menu <em>Theme</em> submenu.</p>
+<p><img alt="" src="../_images/JupyterLite-theme.png" /></p>
+<p>Additional themes can be installed as plugins and selected the same way.</p>
+<p>Note that the OU custom branding is not currently sensitive to theme!</p>
+<p><img alt="" src="../_images/jupyterlab_dark_theme.png" /></p>
+<p>The no longer maintained <a class="reference external" href="https://github.com/arbennett/jupyterlab-themes"><code class="docutils literal notranslate"><span class="pre">arbennett/jupyterlab-themes</span></code></a> repository defines a range of custom themes. Other themes can be found via the <a class="reference external" href="https://github.com/topics/jupyterlab-theme"><code class="docutils literal notranslate"><span class="pre">jupyterlab-theme</span></code></a> tag on Github.</p>
+<p>Support for developing custom themes is provided by the <a class="reference external" href="https://github.com/jupyterlab/extension-cookiecutter-ts"><code class="docutils literal notranslate"><span class="pre">jupyterlab/extension-cookiecutter-ts</span></code></a>. See also the <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/extension/extension_dev.html#theme-plugins">docs</a> for basic information on creating custom themes.</p>
+</div>
+<div class="section" id="accessibility">
+<h2>Accessibility<a class="headerlink" href="#accessibility" title="Permalink to this headline">¶</a></h2>
+<p>Extensions developed explicitly to support accessibility are few and far between. Accessibility of the core UI is tracked, in part, via the <a class="reference external" href="https://github.com/jupyterlab/jupyterlab/issues?q=is%3Aopen+is%3Aissue+label%3Atag%3AAccessibility"><code class="docutils literal notranslate"><span class="pre">Accessibility</span></code> issues tag</a> in the JupyterHub code repository.</p>
+<p>As well as custom themes, we might also include the following as “accessibility related”:</p>
+<ul class="simple">
+<li><p>keyboard shortcuts;</p></li>
+<li><p>audible feedback;</p></li>
+<li><p>terminal access;</p></li>
+<li><p>accessibility / quality audit tools (on the basis that if problems are flagged up, we might address them…).</p></li>
+</ul>
+<div class="section" id="keyboard-shortcuts">
+<h3>Keyboard Shortcuts<a class="headerlink" href="#keyboard-shortcuts" title="Permalink to this headline">¶</a></h3>
+<p>Many of the controls provided by the JupyterLab user interface can be triggered using keyboard shortcuts. The full list of keyboard shortcuts can be viewed from, and modified, via the <em>Keyboard shortcuts</em> editor from the <em>Settings &gt; Advanced Settings Editor</em> menu.</p>
+<p><img alt="" src="../_images/jupyterlab-keyboard-shortcuts.png" /></p>
+</div>
+<div class="section" id="audible-feedback">
+<h3>Audible Feedback<a class="headerlink" href="#audible-feedback" title="Permalink to this headline">¶</a></h3>
+<p>The original classic notebook <a class="reference external" href="https://github.com/innovationOUtside/nb_cell_execution_status"><code class="docutils literal notranslate"><span class="pre">innovationOUtside/nb_cell_execution_status</span></code></a> extension included various forms of audible feedback relating to cell execution, but these have not (as yet…) been ported over to the complementary <a class="reference external" href="https://github.com/innovationOUtside/jupyterlab_cell_status_extension"><code class="docutils literal notranslate"><span class="pre">innovationOUtside/jupyterlab_cell_status_extension</span></code></a> extension.</p>
+</div>
+<div class="section" id="terminal-access">
+<h3>Terminal Access<a class="headerlink" href="#terminal-access" title="Permalink to this headline">¶</a></h3>
+<p>As well as editing notebooks in a notebook style editor via the user inerfaces developed by the core Jupyter developer team, various other individuals and community projects have developed approaches to viewing, running and editing notebooks via a terminal.</p>
+<p>It might be useful to evaluate these from an accessibility perspective.</p>
+<p>Examples include:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/paw-lu/nbpreview"><code class="docutils literal notranslate"><span class="pre">paw-lu/nbpreview</span></code></a>, “a terminal viewer for Jupyter notebooks”;</p></li>
+<li><p><a class="reference external" href="https://github.com/joouha/euporie"><code class="docutils literal notranslate"><span class="pre">joouha/euporie</span></code></a>, “a terminal app for running and editing Jupyter notebooks” [<a class="reference external" href="https://euporie.readthedocs.io/">docs</a>];</p></li>
+<li><p><a class="reference external" href="https://github.com/davidbrochart/jpterm"><code class="docutils literal notranslate"><span class="pre">davidbrochart/jpterm)</span></code></a>, terminal based access to notebooks via a Jupyter server; (I think this is a “next generation” version of <a class="reference external" href="https://github.com/davidbrochart/nbterm"><code class="docutils literal notranslate"><span class="pre">davidbrochart/nbterm</span></code></a>, produced by the same developer).</p></li>
+</ul>
+</div>
+<div class="section" id="quality-audit-tools">
+<h3>Quality Audit Tools<a class="headerlink" href="#quality-audit-tools" title="Permalink to this headline">¶</a></h3>
+<p>Several tools exist to support code quality improvement in notebooks (linting, code formatting etc.) which can provide a benefit to <em>all</em> users arising from consistency of presentation, but as these are not directly related to “using” the user environment, they will not be considered how.</p>
+<p>However, improving material quality in the context of alternative modes of presentation, such as image descriptions, or video transcripts, is more directly relevant. So what tools are there that might help us improve accessibility of materials, and particulalry notebook based materials, delivered via the JupyterLab user interface?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TO DO: https://github.com/innovationOUtside/nb_quality_profile</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="06_collaboration_demo.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Live Collaboration</p>
+        </div>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Tony Hirst<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -6,18 +6,18 @@
     --iou-tutor-bg-color: lightpink;
   }
 
-.tag_style-activity {
+.tag_style-activity pre {
     background-color: var(--iou-activity-bg-color) !important;
 }
 
-.tag_style-solution {
+.tag_style-solution pre {
     background-color: var(--iou-solution-bg-color) !important;
 }
 
-.tag_style-learner {
+.tag_style-learner pre {
     background-color: var(--iou-learner-bg-color) !important;
 }
 
-.tag_style-tutor {
+.tag_style-tutor pre {
     background-color: var(--iou-tutor-bg-color) !important;
 }

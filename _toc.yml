@@ -9,3 +9,4 @@ parts:
   - file: content/04_production_automation
   - file: content/05_jupyter_book
   - file: content/06_collaboration_demo
+  - file: content/07_accessibility_and_theming

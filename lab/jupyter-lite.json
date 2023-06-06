@@ -1,6 +1,7 @@
 {
   "jupyter-config-data": {
     "collaborative": true,
+    "faviconUrl": "./favicon.ico",
     "settingsUrl": "../build/schemas",
     "themesUrl": "./build/themes"
   },

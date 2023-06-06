@@ -6,7 +6,7 @@
   wait: 20000
   quality: 50
 - output: screenshots/empinken_notebook.png
-  url: https://opencomputinglab.github.io/jupyterlab-demo/lab/index.html?path=empinken_demo.ipynb
+  url: https://opencomputinglab.github.io/jupyterlab-demo/lab/index.html?path=02_empinken_demo.ipynb
   selector: '#jp-main-dock-panel'
   wait: 20000
   quality: 50

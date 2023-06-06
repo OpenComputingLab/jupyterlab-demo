@@ -32,6 +32,7 @@ jobs:
         run: |
           cp README.md content
           jupyter lite build --contents ./content
+          cp assets/favicon.ico _output/lab/
           jupyter book build .
           mv ./_build/html ./_output/book
           touch ./_output/.nojekyll

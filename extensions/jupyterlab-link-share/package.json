@@ -1,6 +1,6 @@
 {
   "name": "jupyterlab-link-share",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "JupyterLab Extension to share the URL to a running Jupyter Server",
   "keywords": [
     "jupyter",
@@ -37,7 +37,6 @@
     "eslint": "eslint . --ext .ts,.tsx --fix",
     "eslint:check": "eslint . --ext .ts,.tsx",
     "install:extension": "jupyter labextension develop --overwrite .",
-    "prepare": "jlpm run clean && jlpm run build:prod",
     "watch": "run-p watch:src watch:labextension",
     "watch:src": "tsc -w",
     "watch:labextension": "jupyter labextension watch ."
@@ -73,7 +72,7 @@
     "extension": true,
     "outputDir": "jupyterlab_link_share/labextension",
     "_build": {
-      "load": "static/remoteEntry.c92422c0db9710171f92.js",
+      "load": "static/remoteEntry.baaa94ab8d652988bfff.js",
       "extension": "./extension",
       "style": "./style"
     }

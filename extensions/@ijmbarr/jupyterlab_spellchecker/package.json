@@ -1,6 +1,6 @@
 {
   "name": "@ijmbarr/jupyterlab_spellchecker",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "A spell checker for JupyterLab.",
   "keywords": [
     "jupyter",
@@ -65,7 +65,7 @@
     "typo-js": "^1.1.0"
   },
   "devDependencies": {
-    "@jupyterlab/builder": "^3.0.0",
+    "@jupyterlab/builder": "^3.5.0",
     "@jupyterlab/translation": "^3.0.0",
     "@lumino/coreutils": "^1.8.0",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
@@ -94,7 +94,7 @@
     "schemaDir": "schema",
     "outputDir": "jupyterlab_spellchecker/labextension",
     "_build": {
-      "load": "static/remoteEntry.12cf3b546f44ca3d0354.js",
+      "load": "static/remoteEntry.3ff26e696aa2c37cdbc7.js",
       "extension": "./extension",
       "style": "./style"
     }

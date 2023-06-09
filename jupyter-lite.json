@@ -126,7 +126,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.d87fbfbef62a029ce69b.js",
+        "load": "static/remoteEntry.f294278414d0a929e4ae.js",
         "mimeExtension": "./mimeExtension",
         "name": "jupyterlab-plotly"
       },
@@ -147,14 +147,14 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.e4e09fdb41561df335c3.js",
+        "load": "static/remoteEntry.e539f317fe76909ca0f8.js",
         "name": "jupyterlab_empinken_extension",
         "style": "./style"
       },
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.53218a2189453295856d.js",
+        "load": "static/remoteEntry.f61695968508bbcac77f.js",
         "name": "jupyterlab_ou_brand_extension",
         "style": "./style"
       },

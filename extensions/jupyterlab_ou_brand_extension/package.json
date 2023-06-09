@@ -1,6 +1,6 @@
 {
   "name": "jupyterlab_ou_brand_extension",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Custom branding extension for JupyterLab and RetroLab",
   "keywords": [
     "jupyter",
@@ -54,7 +54,7 @@
     "extension": true,
     "outputDir": "jupyterlab_ou_brand_extension/labextension",
     "_build": {
-      "load": "static/remoteEntry.53218a2189453295856d.js",
+      "load": "static/remoteEntry.f61695968508bbcac77f.js",
       "extension": "./extension",
       "style": "./style"
     }

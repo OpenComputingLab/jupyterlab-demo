@@ -1,6 +1,6 @@
 {
   "name": "jupyterlab_empinken_extension",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Coloured JupyterLab / RetroLab notebook cells based on cell tags",
   "keywords": [
     "jupyter",
@@ -75,6 +75,9 @@
     "stylelint-prettier": "^2.0.0",
     "typescript": "~4.1.3"
   },
+  "resolutions": {
+    "@jupyterlab/rendermime-interfaces": "^3.0.0 <=3.6.3"
+  },
   "sideEffects": [
     "style/*.css",
     "style/index.js"
@@ -88,7 +91,7 @@
     "outputDir": "jupyterlab_empinken_extension/labextension",
     "schemaDir": "schema",
     "_build": {
-      "load": "static/remoteEntry.e4e09fdb41561df335c3.js",
+      "load": "static/remoteEntry.e539f317fe76909ca0f8.js",
       "extension": "./extension",
       "style": "./style"
     }
